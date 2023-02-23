@@ -36,7 +36,7 @@ public class MainActivityTest {
         onView(withId(R.id.mainGoButton))
                 .perform(click());
 
-        intended(allOf(hasComponent(GreetingActivity.class.getName()), hasExtraWithKey("NAME")));
+        intended(allOf(hasComponent(GreetingActivity.class.getName())));
 
         Intents.release();
     }

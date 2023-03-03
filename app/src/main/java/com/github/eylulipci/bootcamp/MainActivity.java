@@ -23,5 +23,11 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("NAME", text.getText().toString());
             v.getContext().startActivity(intent);
         });
+
+        Button mapButton = (Button) findViewById(R.id.mapButton);
+        mapButton.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), MapsActivity.class);
+            v.getContext().startActivity(intent);
+        });
     }
 }
